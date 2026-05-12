@@ -3,7 +3,7 @@
 A news headlines app with category filter and fallback content.
 
 ## Preview
-![News Headlines](screenshot.png)
+![News Headlines](news.jpeg)
 
 ## Features
 - 5 news categories — Technology, Science, Health, Sports, Business
