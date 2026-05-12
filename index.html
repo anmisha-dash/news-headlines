@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>News Headlines</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- header -->
+    <div class="header">
+      <h1 class="logo">NewsFlash</h1>
+      <p class="date" id="dateText"></p>
+    </div>
+
+    <!-- categories -->
+    <div class="categories">
+      <button class="cat-btn active" onclick="setCategory(this,'technology')">Technology</button>
+      <button class="cat-btn" onclick="setCategory(this,'science')">Science</button>
+      <button class="cat-btn" onclick="setCategory(this,'health')">Health</button>
+      <button class="cat-btn" onclick="setCategory(this,'sports')">Sports</button>
+      <button class="cat-btn" onclick="setCategory(this,'business')">Business</button>
+    </div>
+
+    <!-- loader -->
+    <div class="loader" id="loader" style="display:none">
+      <div class="spinner"></div>
+      <p>Fetching news...</p>
+    </div>
+
+    <!-- error -->
+    <div class="error-box" id="errorBox" style="display:none">
+      <p id="errorMsg">Could not load news!</p>
+    </div>
+
+    <!-- news grid -->
+    <div class="news-grid" id="newsGrid"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
